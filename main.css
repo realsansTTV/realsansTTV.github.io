@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* sono (Google Fonts) */
+.sono-varfont {
+    font-family: "Sono", serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings:
+      "MONO" 1;
+  }
+
+
+/* my CSS ---------------------------------------------------------------------------*/
+
+* {box-sizing: border-box;}
+
+body {
+    width: 100vw;
+    background-color: #181818;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2vw;
+}
+
+nav p {
+    display: flex;
+    padding: 0.5vw;
+    color: white;
+}
+
+nav p a {
+    color: #0FF;
+    text-decoration: none;
+}
+
+nav p a:hover {
+    text-decoration: underline;
+}
+
+nav p a.disabled:hover {
+    text-decoration: none;
+}
+
+.disabled {
+    color: grey;
+}
+
+main {
+    margin: 3vw;
+}
+
+main p {
+    color: rgb(168, 168, 168);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+main h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+    color: rgb(194, 194, 194);
+}
+
+i {
+    font-style: italic;
+}
