@@ -80,6 +80,7 @@ nav p {
     display: flex;
     padding: 0.5vw;
     color: white;
+    font-size: 2.5vw;
 }
 
 nav p a {
@@ -117,4 +118,51 @@ main h1{
 
 i {
     font-style: italic;
+}
+
+main h2 {
+    color: rgb(129, 129, 129);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#project-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#project-grid section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3vw;
+}
+
+article#project-grid section h1, h2 {
+    width: 100%;
+    height: auto;
+}
+
+#project-grid section p {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    #project-grid section{
+        width: 48%;
+        height: fit-content;
+    }
+    #project-grid {
+        justify-content: space-evenly;
+    }
+    nav p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav p {
+        font-size: 5vw;
+    }
 }
